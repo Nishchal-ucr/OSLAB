@@ -106,6 +106,10 @@ extern uint64 sys_sysinfo(void);
 // add mapped syscall function here.
 extern uint64 sys_procinfo(void);
 
+// store the total system calls made by the system
+extern uint64 global_sys_calls_counter;
+
+
 // An array mapping syscall numbers from syscall.h
 // to the function that handles the system call.
 static uint64 (*syscalls[])(void) = {
