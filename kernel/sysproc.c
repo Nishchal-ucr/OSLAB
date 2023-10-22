@@ -118,11 +118,3 @@ sys_procinfo(void)
   argaddr(0, &pinfo_pointer);
   return get_sys_procinfo(pinfo_pointer);
 }
-
-// print the process statistics
-uint64
-sys_sched_statistics(void)
-{
-  return sched_statistics();
-}
-
